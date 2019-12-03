@@ -16,7 +16,7 @@ namespace RegexTest
         int RegexSelected = -1;
         List<string> RegexSettings;
         bool displayHEX = false;
-        int HexSize = 45;
+        int HexSize = 44;
 
         public Form1()
         {
