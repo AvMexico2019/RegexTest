@@ -59,6 +59,12 @@
   <PropertyGroup>
     <SignManifests>true</SignManifests>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
@@ -248,7 +254,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SRegex.cs" />
     <Compile Include="Rel_ConceptoRespValor.cs">
       <DependentUpon>ModelosContrato.tt</DependentUpon>
     </Compile>
@@ -352,6 +357,7 @@
     <Compile Include="spuSelectTotalSMOIxFolioOpinion_Result.cs">
       <DependentUpon>ModelosContrato.tt</DependentUpon>
     </Compile>
+    <Compile Include="StringHexDump.cs" />
     <Compile Include="TraductorRUSP_INST.cs">
       <DependentUpon>ModelosContrato.tt</DependentUpon>
     </Compile>

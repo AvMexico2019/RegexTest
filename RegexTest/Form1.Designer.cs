@@ -42,7 +42,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonHEX = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxASCIITable = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxRegex
@@ -162,22 +163,33 @@
             this.buttonHEX.UseVisualStyleBackColor = true;
             this.buttonHEX.Click += new System.EventHandler(this.buttonHEX_Click);
             // 
-            // textBox1
+            // textBoxASCIITable
             // 
-            this.textBox1.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(670, 183);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(292, 199);
-            this.textBox1.TabIndex = 14;
-            this.textBox1.Text = resources.GetString("textBox1.Text");
+            this.textBoxASCIITable.Cursor = System.Windows.Forms.Cursors.No;
+            this.textBoxASCIITable.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxASCIITable.Location = new System.Drawing.Point(670, 196);
+            this.textBoxASCIITable.Multiline = true;
+            this.textBoxASCIITable.Name = "textBoxASCIITable";
+            this.textBoxASCIITable.Size = new System.Drawing.Size(252, 195);
+            this.textBoxASCIITable.TabIndex = 14;
+            this.textBoxASCIITable.Text = resources.GetString("textBoxASCIITable.Text");
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(667, 180);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 13);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "ASCII Table";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(974, 480);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBoxASCIITable);
             this.Controls.Add(this.buttonHEX);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -213,7 +225,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonHEX;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxASCIITable;
+        private System.Windows.Forms.Label label3;
     }
 }
 

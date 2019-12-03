@@ -16,8 +16,7 @@ namespace RegexTest
         int RegexSelected = -1;
         List<string> RegexSettings;
         bool displayHEX = false;
-
-
+        int HexSize = 45;
 
         public Form1()
         {
@@ -39,6 +38,9 @@ namespace RegexTest
             {
                 comboBoxRegexDef.Items.Add(sr);
             }
+            textBoxASCIITable.ScrollBars = ScrollBars.Vertical;
+            //textBoxASCIITable.Text = StringHexDump.ASCIITable(16);
+            //Console.WriteLine(StringHexDump.ASCIITable(16));
         }   
 
         
@@ -67,7 +69,7 @@ namespace RegexTest
         {
             if (displayHEX)
             {
-                richTextBoxStoreProcedureDefinition.Text = HexDump(results[StoreProcedureActivo = comboBoxStoreProcedures.SelectedIndex].ROUTINE_DEFINITION);
+                richTextBoxStoreProcedureDefinition.Text = StringHexDump.HexDump(results[StoreProcedureActivo = comboBoxStoreProcedures.SelectedIndex].ROUTINE_DEFINITION, HexSize);
             }
             else
             {
@@ -110,33 +112,6 @@ namespace RegexTest
             RegexSelected = comboBoxRegexDef.SelectedIndex;
         }
 
-        public static string HexDump(string cadena)
-        {
-            char[] chars = cadena.ToCharArray();
-            string salida1 = "";
-            string salida2 = "";
-            string result = "";
-            int i = 0;
-            foreach (char c in chars)
-            {
-                i++;
-                salida1 += c + " ";
-                salida2 += ((int)c).ToString("x");
-                if ((i % 35) == 0)
-                {
-                    result += salida1 + "\n" + salida2 + "\n";
-                    salida1 = "";
-                    salida2 = "";
-                }
-
-            }
-            if (!salida1.Equals(""))
-            {
-                result += salida1 + "\n" + salida2 + "\n";
-            }
-            return result;
-        }
-
         private void buttonHEX_Click(object sender, EventArgs e)
         {
             if (displayHEX)
@@ -148,7 +123,7 @@ namespace RegexTest
             else
             {
                 displayHEX = true;
-                richTextBoxStoreProcedureDefinition.Text = HexDump(results[StoreProcedureActivo].ROUTINE_DEFINITION);
+                richTextBoxStoreProcedureDefinition.Text = StringHexDump.HexDump(results[StoreProcedureActivo].ROUTINE_DEFINITION, HexSize);
                 buttonHEX.Text = "HEXA";
             }
         }

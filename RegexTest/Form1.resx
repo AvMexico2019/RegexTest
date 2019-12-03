@@ -117,18 +117,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>a b c d e f g h i j k l m n o p q r s t
-6162636465666768696a6b6c6d6e6f7071727374
-u v w x y z A B C D E F G H I J K L M N
-75767778797a4142434445464748494a4b4c4d4e
-O P Q R S T U V W X y z | ° ¬ ! # $ % &amp;
-4f505152535455565758797a7cb0ac2123242526
-/ ( ) = ? ¡ ' ¿ \ ´ ¨ + * ~   { [ ^ } ]
-2f28293d3fa127bf5cb4a82b2a7e207b5b5e7d5d
-` ñ Ñ , ; . : - _ &lt; &gt; á é í ó ú ü Á É Í
-60f1d12c3b2e3a2d5f3c3ee1e9edf3fafcc1c9cd
-Ó Ú Ü "
-d3dadc22</value>
+  <data name="textBoxASCIITable.Text" xml:space="preserve">
+    <value>................................
+000102030405060708090A0B0C0D0E0F
+................................
+101112131415161718191A1B1C1D1E1F
+  ! " # $ % &amp; ' ( ) * + , - . /
+202122232425262728292A2B2C2D2E2F
+0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+303132333435363738393A3B3C3D3E3F
+@ A B C D E F G H I J K L M N O
+404142434445464748494A4B4C4D4E4F
+P Q R S T U V W X Y Z [ \ ] ^ _
+505152535455565758595A5B5C5D5E5F
+` a b c d e f g h i j k l m n o
+606162636465666768696A6B6C6D6E6F
+p q r s t u v w x y z { | } ~
+707172737475767778797A7B7C7D7E7F
+................................
+808182838485868788898A8B8C8D8E8F
+................................
+909192939495969798999A9B9C9D9E9F
+  ¡ ¢ £ ¤ ¥ ¦ § ¨ © ª « ¬ ­ ® ¯
+A0A1A2A3A4A5A6A7A8A9AAABACADAEAF
+° ± ² ³ ´ µ ¶ · ¸ ¹ º » ¼ ½ ¾ ¿
+B0B1B2B3B4B5B6B7B8B9BABBBCBDBEBF
+À Á Â Ã Ä Å Æ Ç È É Ê Ë Ì Í Î Ï
+C0C1C2C3C4C5C6C7C8C9CACBCCCDCECF
+Ð Ñ Ò Ó Ô Õ Ö × Ø Ù Ú Û Ü Ý Þ ß
+D0D1D2D3D4D5D6D7D8D9DADBDCDDDEDF
+à á â ã ä å æ ç è é ê ë ì í î ï
+E0E1E2E3E4E5E6E7E8E9EAEBECEDEEEF
+ð ñ ò ó ô õ ö ÷ ø ù ú û ü ý þ ÿ
+F0F1F2F3F4F5F6F7F8F9FAFBFCFDFEFF</value>
   </data>
 </root>
