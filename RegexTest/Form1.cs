@@ -129,5 +129,13 @@ namespace RegexTest
                 buttonHEX.Text = "HEXA";
             }
         }
+
+        private void buttonSaveRegex_Click(object sender, EventArgs e)
+        {
+            string SRegexSettings = JsonConvert.SerializeObject(RegexSettings);
+            textBoxINFO.Text = SRegexSettings;
+            Properties.Settings.Default.RegexMemory = SRegexSettings;
+            Properties.Settings.Default.Save();
+        }
     }
 }

@@ -44,6 +44,7 @@
             this.buttonHEX = new System.Windows.Forms.Button();
             this.textBoxASCIITable = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.buttonSaveRegex = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxRegex
@@ -58,7 +59,7 @@
             this.Found.Location = new System.Drawing.Point(14, 397);
             this.Found.Multiline = true;
             this.Found.Name = "Found";
-            this.Found.Size = new System.Drawing.Size(879, 69);
+            this.Found.Size = new System.Drawing.Size(879, 154);
             this.Found.TabIndex = 2;
             // 
             // ButtonApplyRegex
@@ -183,11 +184,22 @@
             this.label3.TabIndex = 15;
             this.label3.Text = "ASCII Table";
             // 
+            // buttonSaveRegex
+            // 
+            this.buttonSaveRegex.Location = new System.Drawing.Point(305, 13);
+            this.buttonSaveRegex.Name = "buttonSaveRegex";
+            this.buttonSaveRegex.Size = new System.Drawing.Size(75, 23);
+            this.buttonSaveRegex.TabIndex = 16;
+            this.buttonSaveRegex.Text = "Save Regex";
+            this.buttonSaveRegex.UseVisualStyleBackColor = true;
+            this.buttonSaveRegex.Click += new System.EventHandler(this.buttonSaveRegex_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(974, 480);
+            this.ClientSize = new System.Drawing.Size(974, 563);
+            this.Controls.Add(this.buttonSaveRegex);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBoxASCIITable);
             this.Controls.Add(this.buttonHEX);
@@ -227,6 +239,7 @@
         private System.Windows.Forms.Button buttonHEX;
         private System.Windows.Forms.TextBox textBoxASCIITable;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button buttonSaveRegex;
     }
 }
 
