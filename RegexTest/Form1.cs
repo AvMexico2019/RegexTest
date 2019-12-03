@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using Newtonsoft.Json;
+using System.Text;
 
 namespace RegexTest
 {
@@ -14,6 +15,7 @@ namespace RegexTest
         int StoreProcedureActivo = 0;
         int RegexSelected = -1;
         List<string> RegexSettings;
+        bool displayHEX = false;
 
 
 
@@ -63,7 +65,15 @@ namespace RegexTest
 
         private void comboBoxStoreProcedures_SelectedIndexChanged(object sender, EventArgs e)
         {
-            richTextBoxStoreProcedureDefinition.Text = results[StoreProcedureActivo = comboBoxStoreProcedures.SelectedIndex].ROUTINE_DEFINITION;
+            if (displayHEX)
+            {
+                richTextBoxStoreProcedureDefinition.Text = HexDump(results[StoreProcedureActivo = comboBoxStoreProcedures.SelectedIndex].ROUTINE_DEFINITION);
+            }
+            else
+            {
+                richTextBoxStoreProcedureDefinition.Text = results[StoreProcedureActivo = comboBoxStoreProcedures.SelectedIndex].ROUTINE_DEFINITION;
+            }
+            
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -98,6 +108,49 @@ namespace RegexTest
         {
             textBoxRegex.Text = (string) comboBoxRegexDef.Items[comboBoxRegexDef.SelectedIndex];
             RegexSelected = comboBoxRegexDef.SelectedIndex;
+        }
+
+        public static string HexDump(string cadena)
+        {
+            char[] chars = cadena.ToCharArray();
+            string salida1 = "";
+            string salida2 = "";
+            string result = "";
+            int i = 0;
+            foreach (char c in chars)
+            {
+                i++;
+                salida1 += c + " ";
+                salida2 += ((int)c).ToString("x");
+                if ((i % 20) == 0)
+                {
+                    result += salida1 + "\n" + salida2 + "\n";
+                    salida1 = "";
+                    salida2 = "";
+                }
+
+            }
+            if (!salida1.Equals(""))
+            {
+                result += salida1 + "\n" + salida2 + "\n";
+            }
+            return result;
+        }
+
+        private void buttonHEX_Click(object sender, EventArgs e)
+        {
+            if (displayHEX)
+            {
+                displayHEX = false;
+                richTextBoxStoreProcedureDefinition.Text = results[StoreProcedureActivo].ROUTINE_DEFINITION;
+                buttonHEX.Text = "ASCII";
+            }
+            else
+            {
+                displayHEX = true;
+                richTextBoxStoreProcedureDefinition.Text = HexDump(results[StoreProcedureActivo].ROUTINE_DEFINITION);
+                buttonHEX.Text = "HEXA";
+            }
         }
     }
 }

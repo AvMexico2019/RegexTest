@@ -117,4 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>a b c d e f g h i j k l m n o p q r s t
+6162636465666768696a6b6c6d6e6f7071727374
+u v w x y z A B C D E F G H I J K L M N
+75767778797a4142434445464748494a4b4c4d4e
+O P Q R S T U V W X y z | ° ¬ ! # $ % &amp;
+4f505152535455565758797a7cb0ac2123242526
+/ ( ) = ? ¡ ' ¿ \ ´ ¨ + * ~   { [ ^ } ]
+2f28293d3fa127bf5cb4a82b2a7e207b5b5e7d5d
+` ñ Ñ , ; . : - _ &lt; &gt; á é í ó ú ü Á É Í
+60f1d12c3b2e3a2d5f3c3ee1e9edf3fafcc1c9cd
+Ó Ú Ü "
+d3dadc22</value>
+  </data>
 </root>
