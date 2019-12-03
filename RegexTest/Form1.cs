@@ -39,8 +39,10 @@ namespace RegexTest
                 comboBoxRegexDef.Items.Add(sr);
             }
             textBoxASCIITable.ScrollBars = ScrollBars.Vertical;
-            //textBoxASCIITable.Text = StringHexDump.ASCIITable(16);
+            string espchars = "\t\n\r";
+            //Console.WriteLine(StringHexDump.HexDump(espchars, 20));
             //Console.WriteLine(StringHexDump.ASCIITable(16));
+            
         }   
 
         

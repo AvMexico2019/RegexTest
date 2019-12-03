@@ -40,11 +40,34 @@ namespace RegexTest
                 i++;
                 if (Char.IsControl(c))
                 {
-                    salida1 += "..";
+                    switch ((int) c)
+                    {
+                        case 9:
+                            salida1 += "\\t"; // tab
+                            break;
+                        case 10:
+                            salida1 += "\\n"; // linefeed
+                            break;
+                        case 13:
+                            salida1 += "\\r"; // carriage return
+                            break;
+                        default:
+                            salida1 += "..";
+                            break;
+                    }
+                    
                 }
                 else
                 {
-                    salida1 += c + " ";
+                    switch ((int) c)
+                    {
+                        case 32:
+                            salida1 += "\\s"; // space
+                            break;
+                        default:
+                            salida1 += c + " ";
+                            break;
+                    }
                 }
 
                 salida2 += byte2hex((byte)c);
