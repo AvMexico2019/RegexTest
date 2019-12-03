@@ -90,7 +90,7 @@
             // comboBoxStoreProcedures
             // 
             this.comboBoxStoreProcedures.FormattingEnabled = true;
-            this.comboBoxStoreProcedures.Location = new System.Drawing.Point(600, 87);
+            this.comboBoxStoreProcedures.Location = new System.Drawing.Point(670, 87);
             this.comboBoxStoreProcedures.Name = "comboBoxStoreProcedures";
             this.comboBoxStoreProcedures.Size = new System.Drawing.Size(290, 21);
             this.comboBoxStoreProcedures.TabIndex = 6;
@@ -99,9 +99,9 @@
             // richTextBoxStoreProcedureDefinition
             // 
             this.richTextBoxStoreProcedureDefinition.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxStoreProcedureDefinition.Location = new System.Drawing.Point(-16, 68);
+            this.richTextBoxStoreProcedureDefinition.Location = new System.Drawing.Point(14, 68);
             this.richTextBoxStoreProcedureDefinition.Name = "richTextBoxStoreProcedureDefinition";
-            this.richTextBoxStoreProcedureDefinition.Size = new System.Drawing.Size(607, 323);
+            this.richTextBoxStoreProcedureDefinition.Size = new System.Drawing.Size(647, 323);
             this.richTextBoxStoreProcedureDefinition.TabIndex = 7;
             this.richTextBoxStoreProcedureDefinition.Text = "";
             // 
@@ -118,7 +118,7 @@
             // comboBoxRegexDef
             // 
             this.comboBoxRegexDef.FormattingEnabled = true;
-            this.comboBoxRegexDef.Location = new System.Drawing.Point(597, 156);
+            this.comboBoxRegexDef.Location = new System.Drawing.Point(670, 156);
             this.comboBoxRegexDef.Name = "comboBoxRegexDef";
             this.comboBoxRegexDef.Size = new System.Drawing.Size(292, 21);
             this.comboBoxRegexDef.TabIndex = 9;
@@ -137,7 +137,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(597, 69);
+            this.label1.Location = new System.Drawing.Point(667, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 13);
             this.label1.TabIndex = 11;
@@ -146,7 +146,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(597, 140);
+            this.label2.Location = new System.Drawing.Point(667, 140);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 13);
             this.label2.TabIndex = 12;
@@ -154,7 +154,7 @@
             // 
             // buttonHEX
             // 
-            this.buttonHEX.Location = new System.Drawing.Point(600, 114);
+            this.buttonHEX.Location = new System.Drawing.Point(670, 114);
             this.buttonHEX.Name = "buttonHEX";
             this.buttonHEX.Size = new System.Drawing.Size(75, 23);
             this.buttonHEX.TabIndex = 13;
@@ -165,7 +165,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(597, 183);
+            this.textBox1.Location = new System.Drawing.Point(670, 183);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(292, 199);
@@ -176,7 +176,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(903, 480);
+            this.ClientSize = new System.Drawing.Size(974, 480);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.buttonHEX);
             this.Controls.Add(this.label2);

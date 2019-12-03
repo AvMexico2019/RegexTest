@@ -122,7 +122,7 @@ namespace RegexTest
                 i++;
                 salida1 += c + " ";
                 salida2 += ((int)c).ToString("x");
-                if ((i % 20) == 0)
+                if ((i % 35) == 0)
                 {
                     result += salida1 + "\n" + salida2 + "\n";
                     salida1 = "";
