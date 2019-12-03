@@ -42,15 +42,32 @@ namespace RegexTest
                 {
                     switch ((int) c)
                     {
+                        case 7:
+                            salida1 += "\\a"; // bell
+                            break;
+                        case 8:
+                            salida1 += "\\b"; // back space
+                            break;
                         case 9:
                             salida1 += "\\t"; // tab
                             break;
                         case 10:
                             salida1 += "\\n"; // linefeed
                             break;
+                        case 11:
+                            salida1 += "\\v"; // vertical tab
+                            break;
+                        case 12:
+                            salida1 += "\\f"; // form feed
+                            break;
+
                         case 13:
                             salida1 += "\\r"; // carriage return
                             break;
+                        case 27:
+                            salida1 += "\\e"; // escape
+                            break;
+
                         default:
                             salida1 += "..";
                             break;
