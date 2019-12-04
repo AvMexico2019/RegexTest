@@ -141,7 +141,7 @@ namespace RegexTest
 
         private void buttonRegexDef_Click(object sender, EventArgs e)
         {
-            WebHelp.ShowDialog();
+            WebHelp.Show();
         }
     }
 }
