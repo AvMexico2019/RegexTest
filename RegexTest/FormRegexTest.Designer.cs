@@ -1,6 +1,6 @@
 ﻿namespace RegexTest
 {
-    partial class Form1
+    partial class FormRegexTest
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegexTest));
             this.textBoxRegex = new System.Windows.Forms.TextBox();
             this.Found = new System.Windows.Forms.TextBox();
             this.ButtonApplyRegex = new System.Windows.Forms.Button();
@@ -45,6 +45,7 @@
             this.textBoxASCIITable = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.buttonSaveRegex = new System.Windows.Forms.Button();
+            this.buttonRegexDef = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxRegex
@@ -194,11 +195,22 @@
             this.buttonSaveRegex.UseVisualStyleBackColor = true;
             this.buttonSaveRegex.Click += new System.EventHandler(this.buttonSaveRegex_Click);
             // 
+            // buttonRegexDef
+            // 
+            this.buttonRegexDef.Location = new System.Drawing.Point(386, 13);
+            this.buttonRegexDef.Name = "buttonRegexDef";
+            this.buttonRegexDef.Size = new System.Drawing.Size(75, 23);
+            this.buttonRegexDef.TabIndex = 17;
+            this.buttonRegexDef.Text = "Regex Def";
+            this.buttonRegexDef.UseVisualStyleBackColor = true;
+            this.buttonRegexDef.Click += new System.EventHandler(this.buttonRegexDef_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(974, 563);
+            this.Controls.Add(this.buttonRegexDef);
             this.Controls.Add(this.buttonSaveRegex);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBoxASCIITable);
@@ -240,6 +252,7 @@
         private System.Windows.Forms.TextBox textBoxASCIITable;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button buttonSaveRegex;
+        private System.Windows.Forms.Button buttonRegexDef;
     }
 }
 

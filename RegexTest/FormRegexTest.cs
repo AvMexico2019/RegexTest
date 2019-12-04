@@ -8,7 +8,7 @@ using System.Text;
 
 namespace RegexTest
 {
-    public partial class Form1 : Form
+    public partial class FormRegexTest : Form
     {
         ArrendamientoInmuebleEntities ctx = new ArrendamientoInmuebleEntities();
         List<INFORMATION_SCHEMA_Result> results;
@@ -17,8 +17,9 @@ namespace RegexTest
         List<string> RegexSettings;
         bool displayHEX = false;
         int HexSize = 44;
+        FormRegexDef WebHelp = new FormRegexDef();
 
-        public Form1()
+        public FormRegexTest()
         {
             InitializeComponent();
             Found.ScrollBars = ScrollBars.Vertical;
@@ -136,6 +137,11 @@ namespace RegexTest
             textBoxINFO.Text = SRegexSettings;
             Properties.Settings.Default.RegexMemory = SRegexSettings;
             Properties.Settings.Default.Save();
+        }
+
+        private void buttonRegexDef_Click(object sender, EventArgs e)
+        {
+            WebHelp.ShowDialog();
         }
     }
 }
